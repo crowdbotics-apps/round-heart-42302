@@ -1,10 +1,11 @@
 export const globalOptions = {
-  name: "round-heart-42302",
-  url: "https://round-heart-42302.botics.co",
-  api: "https://round-heart-42302.botics.co/api/v1",
-  screenOptions: {
-    headerShown: false
-  }
+  "name": "round-heart-42302",
+  "url": "https://round-heart-42302.botics.co",
+  "api": "https://round-heart-42302.botics.co/api/v1",
+  "screenOptions": {
+    "headerShown": false
+  },
+  "initialRoute": "aboutTheApp"
 };
 export const modulesOptions = {
   "@modules/app-menu": {
