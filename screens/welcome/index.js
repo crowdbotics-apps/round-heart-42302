@@ -9,14 +9,16 @@ const WelcomeScreen = () => {
   return <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
-        <View style={styles.group}>
+        <Pressable onPress={() => {
+        navigation.navigate("aboutTheApp");
+      }}><View style={styles.group}>
           <Pressable onPress={() => {
-          navigation.navigate("aboutTheApp");
-        }}><Image style={styles.logo} source={require("./logo.png")} /></Pressable>
+            navigation.navigate("aboutTheApp");
+          }}><Image style={styles.logo} source={require("./logo.png")} /></Pressable>
           <Text style={styles.text}>
             Let's build something amazing together!
           </Text>
-        </View>
+        </View></Pressable>
         <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
       </ScrollView>
     </SafeAreaView>;
